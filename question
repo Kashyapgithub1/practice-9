@@ -1,0 +1,57 @@
+#Q1 Ceate a tuple and enter numbers in it. Presentation - ((x,y,z),(w,r,d),(s,t,u)).
+t=()
+for i in range(3):
+  t1=()
+  for j in range(3):
+    v =int(input("enter value : "))
+    t1 = t1+(v,)
+  t= t+(t1,)
+print(t)
+    
+-------------------------------------------------------------------------------------------------------------------------------  
+#Q2. create a tuple and enter number in such a way that it creates a martix of 3*3.
+t=()
+for i in range(3):
+  t1=()
+  for j in range(3):
+    v =int(input("enter value : "))
+    t1 = t1+(v,)
+  t= t+(t1,)
+for row in t:
+  for col in row:
+    print(col, end=" ")
+  print()
+  
+  OR OR OR THROUGH INDEXING.
+  
+  t=()
+for i in range(3):
+  t1=()
+  for j in range(3):
+    v =int(input("enter value : "))
+    t1 = t1+(v,)
+  t= t+(t1,)
+for i in range(3):
+  for j in range(3):
+    print(t[i][j], end =" ")
+  print()
+  
+  --------------------------------------------------------------------------------------------------------------------------------
+  #Q3.Enter product ,code,rate ,quantity.
+  t=()
+
+for i in range(3):
+  p=input("enter product: ")
+  c=input("enter code: ")
+  r=int(input("enter rate: "))
+  q=int(input("enter quantity: "))
+  t+=((c,p,r,q,),)
+print("Code\t\tProduct\t\tRate\t\tQuantity\tAmount")
+for row in t:
+  amt = row[2]*row[3]
+  for col in row:
+   print(col,end="\t\t\t")
+  print(amt)
+  
+  
+  
